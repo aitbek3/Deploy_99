@@ -4,7 +4,7 @@ from .views import LaptopViewSet, LaptopPhotoViewSet
 
 router = DefaultRouter()
 router.register(r'laptops', LaptopViewSet)
-router.register(r'laptopphotos', LaptopPhotoViewSet)
+router.register(r'laptop-photos', LaptopPhotoViewSet)
 
 urlpatterns = [
     path('api/', include(router.urls)),
